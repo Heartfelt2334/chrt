@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/timetable-style.css">
+    <link rel="stylesheet" href="css/profile-menu.css">
+    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <script src="assets/script/menu-script.js" defer></script>
+    <script src="assets/script/timetable-item.js" defer></script>
+    <script src="assets/script/timetable-live-changer.js" defer></script>
+    <title>Расписание</title>
+</head>
+<body>
+    <div id="menu" class="profile__menu">
+        <div class="profile__menu__items container">
+            <button id="burger-disable" onclick=""><img src="assets/img/arrow.svg" alt=""></button>
+            <div class="profile__icon">
+                <img src="assets/img/profile-icon.svg" alt="">
+            </div>
+            <h1>Пользователь</h1>
+            <div class="menu__items">
+                <div class="menu__item">
+                    <img src="assets/img/procolledge-icon.svg" alt="">
+                    <a href="">Система ProCollege</a>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/img/shedule-icon.svg" alt="">
+                    <a href="timetable.html">Расписание</a>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/img/teachers-icon.svg" alt="">
+                    <a href="teachers-search.html">Преподаватели</a>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/img/session-icon.svg" alt="">
+                    <a href="session.html">Сессия</a>
+                </div>
+                
+                <div class="menu__item">
+                    <img src="assets/img/allert-icon.svg" alt="">
+                    <a href="">Объявления</a>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/img/map-icon.svg" alt="">
+                    <a href="map-page.html">Карта</a>
+                </div>
+                <div class="menu__item">
+                    <img src="assets/img/news-icon.svg" alt="">
+                    <a href="news.html">Новости</a>
+                    <div class="allert"></div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+    <div id="menu-page-disabler" class="timetable">
+        <div class="nav__panel container">
+            <button id="burger" onclick=""><img src="assets/img/burger-menu.svg" alt=""></button>
+            <h1><span>ис-361</span></h1>
+            <button onclick="open('timetable-settings.html', '_self', false); window.close()"><img src="assets/img/settings-icon.svg" alt=""></button>
+        </div>
+        <h2 class="week__title container">Текущая неделя</h2>
+        <div class="timetable__block container">
+            <div id="timetable-item" class="timetable__item">
+                <h2><span>Понедельник: <span id="date-mon"></span></span> <label id="timetable-disable-mon"><img src="assets/img/arrow.svg" alt=""></label></h2>
+                <div id="timetable-list-mon" class="timetable__list">
+                    <h1 id="lesson-number">1</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 id="lesson-name" class="lesson__name"></h2>
+                            <p id="cabinet" class="cabinet"></p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p id="teacher-name" class="teacher__name"></p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="timetable-list-mon" class="timetable__list">
+                    <h1>2</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="timetable-list-mon" class="timetable__list">
+                    <h1>3</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="timetable__item">
+                <h2><span>Вторник: <span id="date-tue"></span></span><label id="timetable-disable-tue"><img src="assets/img/arrow.svg" alt=""></label></h2>
+                <div id="timetable-list-tue" class="timetable__list">
+                    <h1>1</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="timetable-list-tue" class="timetable__list">
+                    <h1>2</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="timetable-list-tue" class="timetable__list">
+                    <h1>3</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timetable__item">
+                <h2><span>Среда: <span id="date-wed"></span></span>  <label id="timetable-disable-wed"><img src="assets/img/arrow.svg" alt=""></label></h2>
+                <div id="timetable-list-wed" class="timetable__list">
+                    <h1>3</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timetable__item">
+                <h2><span>Четверг: <span id="date-thu"></span></span><label id="timetable-disable-thu"><img src="assets/img/arrow.svg" alt=""></label></h2>
+                <div id="timetable-list-thu" class="timetable__list">
+                    <h1>3</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timetable__item">
+                <h2><span>Пятница: <span id="date-fri"></span></span>  <label id="timetable-disable-fri"><img src="assets/img/arrow.svg" alt=""></label></h2>
+                <div id="timetable-list-fri" class="timetable__list">
+                    <h1>3</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timetable__item">
+                <h2><span>Суббота: <span id="date-sat"></span> </span><label id="timetable-disable-sat"><img src="assets/img/arrow.svg" alt=""></label></h2>
+                <div id="timetable-list-sat" class="timetable__list">
+                    <h1>3</h1>
+                    <div class="timetable__row">
+                        <div class="timetable__upper__row">
+                            <h2 class="lesson__name">Учебная практика</h2>
+                            <p class="cabinet">407</p>
+                        </div>
+                        <div class="timetable__lower__row">
+                            <p class="teacher__name">Микрюков А.А.</p>
+                            <p class="lesson__time"> 8:30 - 10:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

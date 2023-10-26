@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Gilroy;
+}
+
+input:focus-visible{
+    outline: 0;
+    outline-offset: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #3C3C3C;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 84.62vw;
+}
+
+.student__bilet{
+    background: linear-gradient(180deg, #000 0%, rgba(60, 60, 60, 0.67) 98.91%) center;
+    padding-top: 20.51vw;
+    height: 100vh;
+    
+}
+
+.nav__panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__panel img{
+    width: 8.21vw;
+    height: 8.21vw;
+}
+
+.nav__panel button{
+    background: none;
+    border: none;
+}
+
+.nav__panel button:first-of-type{
+    height: 8.21vw;
+    width: 8.21vw;
+}
+
+.nav__panel button:last-of-type{
+    height: 8.21vw;
+    width: 8.21vw;
+    opacity: 0;
+}
+
+.nav__panel button img{
+    width: 100%;
+}
+
+.student__bilet__block{
+    padding: 6.15vw 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6.15vw;
+}
+
+
+.student__bilet__block h1{
+    color: #FFF;
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.student__bilet h1{
+    padding-top: 6.15vw;
+    text-align: center;
+    color: #FFF;
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.student__bilet__block p{
+    color: #FFF;
+    font-size: 3.59vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.action{
+    padding-top: 10.26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.1vw;
+    width: 100%;
+    max-width: 84.62vw;
+}
+.action input{
+    border: none;
+    border-radius: 7.69vw;
+    background: #272727;
+    padding: 4.87vw 0 4.87vw 6.15vw;
+    width: 100%;
+}
+.action input, textarea::placeholder{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.action button{
+    outline: none;
+    outline-offset: none;
+    border: none;
+    border-radius: 7.69vw;
+    background: #4D4C4C;
+    color: #fff;
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    padding: 4.87vw 0;
+    width: 100%;
+    -webkit-transition-delay: .2s;
+}
+
+.action button:active{
+    background: #272727;
+    transition: ease-in, .2s;
+
+}
+
+.student__bilet__block button:nth-child(2){
+    align-self: center;
+    margin-top: 89vw;
+    border-radius: 7.69vw;
+    background: #4D4C4C;
+    padding: 4.62vw 5.9vw;
+    max-width: 47.69vw;
+    border: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
